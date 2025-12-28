@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>A Cara do Gueto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body tabindex="0">
+
+  <!-- INTRO -->
+  <div id="intro">
+    <h1>A Cara do Gueto</h1>
+    <p>Enter the digital city of culture & creativity</p>
+
+    <div class="intro-buttons">
+      <button id="enter">Enter City</button>
+      <button id="skip-3d">Classic View</button>
+    </div>
+  </div>
+
+  <!-- CLASSIC VIEW -->
+  <div id="classic-view" class="hidden">
+    <h1>A Cara do Gueto</h1>
+    <p>Culture. Creativity. Movement.</p>
+
+    <section>
+      <h2>Who We Are</h2>
+      <p>A creative collective born from the streets.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p>Visuals, collaborations, storytelling.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>hello@acaradogueto.com</p>
+    </section>
+
+    <button id="back-to-3d">Enter 3D Experience</button>
+  </div>
+
+  <!-- PROMPT -->
+  <div id="prompt"></div>
+
+  <!-- SECTION OVERLAY -->
+  <div id="section" class="hidden">
+    <button id="close">×</button>
+    <h2 id="section-title"></h2>
+    <div id="section-content"></div>
+  </div>
+
+  <!-- CANVAS -->
+  <canvas id="webgl"></canvas>
+
+  <!-- MOBILE CONTROLS -->
+  <div id="mobile-controls">
+    <div id="joystick"><div id="stick"></div></div>
+    <div id="turn-buttons">
+      <button id="turn-left">◀</button>
+      <button id="turn-right">▶</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
